@@ -37,3 +37,4 @@ export class Movie {
         this.borshInstructionSchema.encode({ ...this, variant: 0 }, buffer)
         return buffer.slice(0, this.borshInstructionSchema.getSpan(buffer))
     }
+}
